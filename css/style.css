@@ -1,0 +1,172 @@
+ul
+{
+    /* Sets the marker of the list item element */
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    /* Property controls what happens to contact that is too
+       bit to fit into an area */
+    overflow: hidden;
+    background-color: rgba(106, 17, 203, 1), rgba(37, 117, 252, 1);
+    font-size: 25px;
+
+
+}
+li
+{
+    /* Make sure the content on the left of the area in div */
+    float: left;
+    border-right: 0px solid #bbb; /* bbb is shade of white*/
+
+}
+li a
+{
+
+    /* Display an element as a block element like <p>. It
+        starts on a new line, and takes up the whole width. */
+    display: block;
+    color: black; /* font color */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.active
+{
+    background-color: rgba(37, 117, 252, 1);
+}
+li a:hover:not(.active) /* Make sure not to change the active one */
+{
+    background-color: white
+}
+.centered
+{
+    /* Place the text element exactly where we want it using the
+       top, left, bottom, right */
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 30%;
+    font-size: 3vw; /* Viewport Sized Typography - 1vw - 1% of viewport */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 
+{ 
+    /* Customization */
+    color: #000000; 
+    font-family: Times; 
+    font-weight: bold;
+    font-size: 60px;
+}
+h2 
+{ 
+    /* Customization */
+    color: #000000; 
+    font-family: Times; 
+    font-size: 30px;
+}
+h3 
+{ 
+    /* Customization */
+    color: #000000; 
+    font-family: Times; 
+    font-size: 35px;
+}
+h4 
+{ 
+    /* Customization */
+    color: #000000; 
+    font-family: Times; 
+    font-size: 35px;
+}
+
+li 
+{ 
+    /* Customization */
+    color: #000000; 
+    font-family: Times; 
+    font-size: 25px;
+}
+        
+p 
+{ 
+    /* Customization */
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 15px;
+}
+
+#menu 
+{
+    display: inline;
+}
+
+div1 
+{
+    /*  This is the div that will make an animation for the table in classes */
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: classes;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+}
+  
+@keyframes classes 
+{
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+.color
+{
+    /* Background color for pages */
+    background-color: rgba(106, 17, 203, 1), rgba(37, 117, 252, 1);
+}
+
+.secretColor
+{
+    /* Background color for the secret page located inside of classes.html */
+    background-color: rgb(231, 186, 89);
+}
+
+/* NavBar active button */
+.active 
+{
+    text-decoration: underline;
+}
+
+/* Change text color */
+.navbar-nav .nav-item .nav-link 
+{
+    color: white;
+}
+
+/* Change underline color */
+.navbar-nav > .nav-item.active 
+{
+    color: white;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+
+middle {
+        height: 200px;
+        width: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+}
