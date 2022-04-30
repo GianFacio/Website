@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  
+  <!-- Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="/Milestone 1/css/style.css">
+
+  <!-- Script -->
+  <script src="/Milestone 1/js/family.js"></script>
+</head>
+
+<body class="vh-100 gradient-custom">
+  <!--Nav Begin -->
+  <div id="nav-placeholder">
+
+  </div>
+  <script>
+    $(function () 
+    {
+      $("#nav-placeholder").load("../includes/nav.html", function () 
+      {
+        $('.navbar-nav a:contains("Family")').parent().addClass('active');
+      })
+    });
+  </script>
+  <!-- Nav End -->
+
+  <!-- Title -->
+  <div>
+    <h1 align="center" style="color: blanchedalmond; text-shadow: 3px 3px gray;">Family</h1>
+  </div>
+
+  <!-- Picture -->
+  <div align="center">
+    <img src="/Milestone 1/images/siblings.JPG" alt="Sibling Picture" height="35%" width="35%" />
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Second Title -->
+  <div align="center">
+
+    <h4 style="color: blanchedalmond;">Siblings</h4>
+
+  </div>
+
+  <!-- Accordion -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Sandra
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Sandra: The one im holding is Sandra, she is now 12 years old.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Miguel
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Miguel: The one next to me is Miguel, he is now 19 years old.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Eddie
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Eddie: The one at the very right is Eddie, he is now 16 years old.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Accordion -->
+
+  <!-- Footer -->
+  <div align="center">
+    <br>
+    <button onclick="javascript:family()" type="button" class="btn btn-outline-light" style="color: blanchedalmond;">More Information</button>
+    <p style="color:blanchedalmond;"><cite>Milestone</cite> by Gian Facio. GCU 2022.</p>
+
+  </div>
+</body>
+</html>
